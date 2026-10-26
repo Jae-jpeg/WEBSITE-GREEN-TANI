@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Tani</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Navigasi utama -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar-inner">
+    
+            <!-- LOGO -->
+            <a href="index.html" class="logo">
+                <div class="logo-leaf">
+                    <img src="../Gambar/logo.png" alt="Logo Green Tani">
+                </div>
+                Green Tani
+            </a>
+    
+            <!-- TOMBOL MENU MOBILE -->
+            <button class="hamburger"
+                aria-expanded="false" aria-controls="primary-navigation"
+                aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+    
+            <!-- MENU NAVIGASI -->
+            <nav>
+                <ul class="nav-menu" id="primary-navigation">
+                    <li><a href="index.html" class="active">Beranda</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="pesan.html">Pemesanan</a></li>
+                    <li><a href="riwayat.html">Riwayat</a></li>
+                    <li><a href="tentang.html">Tentang Kami</a></li>
+                </ul>
+            </nav>
+    
+            <!-- PROFIL CUSTOMER -->
+            <div class="nav-account" id="navAccount">
+                <button type="button"
+                    class="account-trigger"
+                    id="accountTrigger"
+                    aria-expanded="false">
+                    <span class="account-avatar" id="accountAvatar">♙</span>
+                    <span class="account-name" id="accountName">Masuk</span>
+                    <span class="account-chevron">⌄</span>
+                </button>
+    
+                <div class="account-dropdown" id="accountDropdown" hidden>
+                    <p class="account-greeting" id="accountGreeting">
+                        Selamat datang!
+                    </p>
+    
+                    <a href="login.html" id="accountLogin">Login</a>
+                    <a href="register.html" id="accountRegister">Buat Akun</a>
+    
+                    <a href="riwayat.html" id="accountHistory" hidden>
+                        Riwayat Pesanan
+                    </a>
+    
+                    <button type="button" id="accountLogout" hidden>
+                        Logout
+                    </button>
+                </div>
+            </div>
+    
+        </div>
+    </header>
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+                <span class="hero-badge">🌱 Distributor Pupuk Terpercaya</span>
+                <h1>Solusi Lengkap <span>Pertanian</span> Modern</h1>
+                <p>Green Tani menghadirkan produk pupuk berkualitas untuk petani Indonesia yang produktif dan berkelanjutan.</p>
+
+                <div class="hero-buttons">
+                    <a href="produk.html" class="btn btn-primary">🌾 Lihat Katalog</a>
+                    <a href="pesan.html" class="btn btn-outline">📋 Pesan Sekarang</a>
+                    <a href="tentang.html" class="btn btn-outline">ℹ️ Tentang kami</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUK UNGGULAN -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>🌱 Daftar Produk Pupuk</h2>
+                    <p class="section-desc">Semua produk tersedia dalam satuan kilogram (kg)</p>
+                </div>
+
+                <div class="produk-grid" id="berandaGrid"></div>
+            </div>
+
+            <p style="text-align: center; margin-top: 28px;">
+                <a href="produk.html" class="btn btn-green">Lihat Produk Lebih Detail →</a>
+            </p>
+        </section>
+
+        <!-- CARA PEMESANAN -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Cara Pemesanan</h2>
+                    <p class="section-desc">Mudah dan cepat hanya dalam 4 langkah</p>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Pilih Produk</h3>
+                        <p>Browse produk dan pilih pupuk sesuai kebutuhan lahan Anda</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Isi Form Pesanan</h3>
+                        <p>Lengkapi data pengiriman dan jumlah pesanan melalui form online</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Pembayaran</h3>
+                        <p>Bayar secara Tunai / Non-tunai</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Terima Pesanan</h3>
+                        <p>Produk dikirim langsung ke lokasi Anda dengan aman</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATISTIK -->
+        <section class="section section-green">
+            <div class="container">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+                    <div class="stat-box transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Tahun Pengalaman</span>
+                    </div>
+
+                    <div class="stat-box transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Jenis Pupuk</span>
+                    </div>
+
+                    <div class="stat-box transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg">
+                        <span class="stat-number">12.000+</span>
+                        <span class="stat-label">Petani Aktif</span>
+                    </div>
+
+                    <div class="stat-box transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg">
+                        <span class="stat-number">34</span>
+                        <span class="stat-label">Provinsi</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <div class="logo-leaf">Green Tani</div>
+                </a>
+                <p>Platform digital untuk kebutuhan pupuk dan agrikultur Indonesia. Terpercaya sejak 2010.</p>
+            </div>
+
+            <div class="footer-nav">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="pesan.html">Pemesanan</a></li>
+                    <li><a href="riwayat.html">Riwayat</a></li>
+                    <li><a href="tentang.html">Tentang Kami</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-nav">
+                <h4>Kontak</h4>
+                <p>📞 +62 812-3456-7890</p>
+                <p>✉️ info@mothernature.id</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Green Tani — Dibuat untuk Tugas Proyek Perancangan Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/katalog.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/profil.js"></script>
+
+</body>
+</html>

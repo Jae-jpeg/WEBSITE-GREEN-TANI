@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Akun - Green Tani</title>
+    <!-- Pastikan path CSS-nya benar ya -->
+    <link rel="stylesheet" href="../css/style.css"> 
+</head>
+<body>
+
+    <!-- Aku bungkus semuanya di dalam container agar mudah di-center di layar -->
+    <div class="auth-container">
+        <main class="auth-card">
+            <div class="auth-header">
+                <h1>Daftar Akun</h1>
+                <p>Buat akun untuk mempermudah pemesanan pupuk Green Tani.</p>
+            </div>
+
+            <form id="formRegister" class="auth-form">
+                <div class="input-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="telepon">Nomor Telepon</label>
+                    <input type="tel" id="telepon" name="telepon" placeholder="0812xxxxxxx" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="alamat">Alamat Pengiriman</label>
+                    <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat lengkap" required></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Minimal 6 karakter" required minlength="6">
+                </div>
+
+                <div class="input-group">
+                    <label for="konfirmasiPassword">Konfirmasi Password</label>
+                    <input type="password" id="konfirmasiPassword" name="konfirmasiPassword" placeholder="Ulangi password" required minlength="6">
+                </div>
+
+                <button type="submit" class="btn-primary">Daftar Sekarang</button>
+            </form>
+
+            <p id="pesan" class="pesan-alert"></p>
+
+            <div class="auth-footer">
+                <p>Sudah punya akun? <a href="login.html">Login di sini</a></p>
+                <p><a href="index.html" class="link-back">&larr; Kembali ke Beranda</a></p>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/akun.js"></script>
+</body>
+</html>

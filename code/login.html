@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#174b35">
+  <title>Login Customer | Green Tani</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-card">
+    <a class="auth-brand" href="index.html"><img src="../Gambar/logo.png" alt="" onerror="this.style.display='none'"><span>Green Tani</span></a>
+    <div class="auth-heading"><span class="eyebrow">SELAMAT DATANG KEMBALI</span><h1>Masuk ke akunmu</h1><p>Kelola pemesanan pupuk dengan lebih mudah.</p></div>
+    <form id="formLogin" class="auth-form">
+      <div class="input-group"><label for="email">Alamat email</label><input type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email" required></div>
+      <div class="input-group"><label for="password">Password</label><input type="password" id="password" name="password" placeholder="Masukkan password" autocomplete="current-password" required></div>
+      <button type="submit" class="btn btn-green auth-submit">Masuk ke akun <span aria-hidden="true">→</span></button>
+      <p id="pesanLogin" class="pesan-alert" role="status" aria-live="polite"></p>
+    </form>
+    <div class="auth-footer"><p>Belum punya akun? <a href="register.html">Daftar sekarang</a></p><a class="link-back" href="index.html">← Kembali ke beranda</a></div>
+  </main>
+  <script src="../js/login.js"></script>
+</body>
+</html>
